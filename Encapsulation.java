@@ -8,12 +8,15 @@ class Employee {
         Scanner sc = new Scanner(System.in);
         System.out.println("Please enter upi pin");
         int pin = sc.nextInt();
+
         if (pin == upi_pin) {
             Account_bal = balance;
             System.out.println("balance fetched");
         } else {
             System.out.println("balance is not fetched");
         }
+
+        sc.close();
     }
 
     public int getBalance() {
